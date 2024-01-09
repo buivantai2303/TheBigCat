@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styledetail.css">
+
+
+</head>
+<body>
+    
+    <p> Thử commit phát heheheheheheh</p>
+    <title>Hrheheheheheh</title>
+    <div class="container">
+        <div class="fater-viewproduct">
+            <div class="view-product">
+                <div class="main">
+                    <img src="images/main.jpg" class="img-feature">
+                    <div class="control pre"><img src="images/leftbut.png" alt=""></div>
+                    <div class="control next"><img src="images/rightbut.png" alt=""></div>
+                </div>
+                
+                <div class="list-image">
+                    <div class="active"><img src="images/img1.jpg" alt=""></div>
+                    <div><img src="images/img2.jpg" alt=""></div>
+                    <div><img src="images/img3.jpg" alt=""></div>
+                    <div><img src="images/img4.jpg" alt=""></div>
+                    <div><img src="images/img5.jpg" alt=""></div>
+                    <div><img src="images/img6.jpg" alt=""></div>
+                          
+                </div>
+                <div id="popup" class="popup">
+                    <span >&times;</span>
+                    <img id="popupImg" src="images/img1.jpg" alt="">
+                    
+                </div>                 
+            </div>
+            
+
+            <div class="share">
+                <div class="sharetxt"><p>Chia sẻ cho taooo:</p></div>
+                <div class="iconsocial">
+                    <div class="facebookicon"><img src="images/faceicon.png" alt=""></div>
+                    <div class="messicon"><img src="images/messicon.png" alt=""></div>
+                    <div class="instaicon"><img src="images/insicon.png" alt=""></div>
+                    <div class="twiticon"><img src="images/twiticon.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nameproduct">
+                <h1 class="title"> Bả dành cho chó màu vàng </h1>
+                <h2 class="brand">Nhãn hiệu: Khải đẹp chai</h2>
+                <h3 class="productid">Mã sản phẩm: #563472</h3>
+            </div>
+            <div class="vote">
+                <h3>Đánh giá:</h3>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquam iusto sapiente sunt totam accusamus cum quisquam, labore repellendus, architecto vitae! Neque enim suscipit quis repudiandae praesentium quam, atque esse?</p>
+            </div>
+            <div class="price">
+                <p>Giá sản phẩm:</p>
+                <span class="old-price">6000050 VNĐ</span>
+                <span class="new-price">5555000 VNĐ</span>
+            </div>
+            <div class="quantity">
+                <label for="quantity">Số lượng:</label>
+                
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <!-- Nút tăng giảm số lượng -->
+                <button class="decrease" onclick="decreaseQuantity()">-</button>
+                <button class="increase"onclick="increaseQuantity()">+</button>
+                
+
+            </div>  
+            <div class="buybut">
+                <div class="addtocart">
+                    <button class="add">THÊM VÀO GIỎ HÀNG </button>
+                </div>
+                <div class="buynow">
+                    <button class="buy">MUA NGAY </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="product-rating">
+        <div class="product-rating_header">
+            <div class="product-rating_header_txt">
+                Đánh giá sản phẩm
+            </div>
+        </div>
+        <div class="product-rating_overview"></div>
+        <div class="product-rating_list">
+            <div class="product-rating_comment_list">
+                <div class="comment_details">
+                    <div class="avt">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                    <div class="comment_content">
+                        <a href="" class="comment_author">KHai dep chai top 1</a>
+                        <div class="product_rating_start"></div>
+                        <div class="product_rating_time">22:46 12/12/2023</div>
+                        <div class="comment_txt">Quá xịn lunnn sốp ơi mua về chó ăn phát ẻ chảy </div>
+                        <div class="image_rating">
+                           <div class="image_rating_list">
+                            <div class="image_rating_list_container">
+                                <div class="img_rating_detail">
+                                    <img src="images/img3.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img1.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img2.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img6.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img4.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="image_rating_zoom">
+                                <div class="image_rating_zoom_detail">
+                                    <img src="images/img4.jpg" alt="">
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment_details">
+                    <div class="avt">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                    <div class="comment_content">
+                        <a href="" class="comment_author">KHai dep chai top 1</a>
+                        <div class="product_rating_start"></div>
+                        <div class="product_rating_time">22:46 12/12/2023</div>
+                        <div class="comment_txt">Quá xịn lunnn sốp ơi mua về chó ăn phát ẻ chảy </div>
+                        <div class="image_rating">
+                           <div class="image_rating_list">
+                            <div class="image_rating_list_container">
+                                <div class="img_rating_detail">
+                                    <img src="images/img3.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img1.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img2.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img6.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img4.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="image_rating_zoom">
+                                <div class="image_rating_zoom_detail">
+                                    <img src="images/img4.jpg" alt="">
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment_details">
+                    <div class="avt">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                    <div class="comment_content">
+                        <a href="" class="comment_author">KHai dep chai top 1</a>
+                        <div class="product_rating_start"></div>
+                        <div class="product_rating_time">22:46 12/12/2023</div>
+                        <div class="comment_txt">Quá xịn lunnn sốp ơi mua về chó ăn phát ẻ chảy </div>
+                        <div class="image_rating">
+                           <div class="image_rating_list">
+                            <div class="image_rating_list_container">
+                                <div class="img_rating_detail">
+                                    <img src="images/img3.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img1.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img2.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img6.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img4.jpg" alt="">
+                                </div>
+                                <div class="img_rating_detail">
+                                    <img src="images/img6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="image_rating_zoom">
+                                <div class="image_rating_zoom_detail">
+                                    <img src="images/img4.jpg" alt="">
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+
+    <script src="details.js"></script>
+</body>
+</html>
