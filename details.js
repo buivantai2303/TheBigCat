@@ -90,26 +90,45 @@ document.querySelector('.popup span').onclick = () => {
 
 //-----------------------zoom image --------------------------------------------------------------------------------------
 
+// const imageContainers = document.querySelectorAll('.image_rating_list_container .img_rating_detail img');
+// let selectedImage = null;
+
+// imageContainers.forEach(image => {
+//     image.addEventListener('click', function() {
+//         const imagePath = this.getAttribute('src');
+//         const zoomedContainer = document.querySelector('.image_rating_zoom');
+//         const zoomedImage = zoomedContainer.querySelector('.image_rating_zoom_detail img');
+        
+//         // Kiểm tra xem hình ảnh đã được chọn trước đó chính là hình ảnh đang được click
+//         if (selectedImage === this) {
+//             // Nếu là hình ảnh đã được chọn, ẩn phần image_rating_zoom_detail
+//             zoomedContainer.style.display = 'none';
+//             selectedImage = null; // Đặt lại giá trị của selectedImage
+//         } else {
+//             // Nếu không, hiển thị hình ảnh được chọn trong phần image_rating_zoom_detail
+//             zoomedContainer.style.display = 'block';
+//             zoomedImage.setAttribute('src', imagePath);
+//             selectedImage = this; // Lưu trữ hình ảnh đã chọn vào biến selectedImage
+//         }
+//     });
+// });
+
 const imageContainers = document.querySelectorAll('.image_rating_list_container .img_rating_detail img');
-let selectedImage = null;
 
 imageContainers.forEach(image => {
     image.addEventListener('click', function() {
         const imagePath = this.getAttribute('src');
-        const zoomedContainer = document.querySelector('.image_rating_zoom');
-        const zoomedImage = zoomedContainer.querySelector('.image_rating_zoom_detail img');
+        const parentContainer = this.closest('.comment_details');
+        const zoomedImage = parentContainer.querySelector('.image_rating_zoom_detail img');
+        const zoomedContainer = parentContainer.querySelector('.image_rating_zoom');
         
-        // Kiểm tra xem hình ảnh đã được chọn trước đó chính là hình ảnh đang được click
-        if (selectedImage === this) {
-            // Nếu là hình ảnh đã được chọn, ẩn phần image_rating_zoom_detail
-            zoomedContainer.style.display = 'none';
-            selectedImage = null; // Đặt lại giá trị của selectedImage
-        } else {
-            // Nếu không, hiển thị hình ảnh được chọn trong phần image_rating_zoom_detail
-            zoomedContainer.style.display = 'block';
-            zoomedImage.setAttribute('src', imagePath);
-            selectedImage = this; // Lưu trữ hình ảnh đã chọn vào biến selectedImage
+        if (zoomedImage) {
+            if (zoomedContainer.style.display === 'block' && zoomedImage.getAttribute('src') === imagePath) {
+                zoomedContainer.style.display = 'none';
+            } else {
+                zoomedImage.setAttribute('src', imagePath);
+                zoomedContainer.style.display = 'block';
+            }
         }
     });
 });
-
